@@ -1,13 +1,13 @@
 %% Author: Edgar Tejada
-%% This is my resume as of 2020-12-11
+%% This is my public resume in Late format.
 
-\documentclass [12pt]{article}
+\documentclass [11pt]{article}
 \title{Public Resume}
 \author{Edgar Tejada (edgar_tejada0971@elcamino.edu)\\University of California, Merced}
 \usepackage[utf8]{inputenc}
 \usepackage[backend=biber, bibencoding=utf8, style=mla, citestyle=mla]{biblatex}
-%\usepackage[english]{babel} %English only, no greek or math.
-\usepackage[greek,english]{babel} %Needed for greek letters
+\usepackage[english]{babel} %English only, no greek or math.
+%\usepackage[greek,english]{babel} %Needed for greek letters
 \usepackage[pdfborder={0 0 0.5 [3 3]}, pdftitle={Edgar Tejada's Public Resume}]{hyperref} %Needed for website
 \hypersetup{
 	colorlinks=true,
@@ -27,9 +27,10 @@
 		\finentrypunct\printfield{abstract}\finentry
 	}
 }
-
+%Make an exception for minus sign as a unicode character
+\DeclareUnicodeCharacter{2212}{-}
 %
-%Margin - 0.5 on edges, 0.75 at top inch on all sides
+%Margin - 0.5 on edges, 0.75 at top
 %
 \usepackage[letterpaper]{geometry}
 \usepackage{times}
@@ -58,7 +59,7 @@
 %\chead{{\Large \textbf{Edgar Tejada}} \linebreak \href{mailto:edgar_tejada0971@elcamino.edu}{Email} $||$ \href{https://github.com/ejtejada}{Github} $||$ \href{skype:ejtejada_1?call}{Skype} $||$ \href{tel:1-865-201-7787}{Phone}}
 
 %Printable Header:
-\chead{{\Large \textbf{Edgar Tejada}} \linebreak \href{mailto:edgar_tejada0971@elcamino.edu}{edgar\underline{{ }{ }}tejada0971@elcamino.edu} $||$ \href{https://github.com/ejtejada}{https://github.com/ejtejada} $||$ \href{skype:ejtejada_1?call}{Skype:‭ ‬ejtejada‭\underline{{ }{ }}1} $||$ \href{tel:1-865-201-7787}{1-865-201-7787}}
+\chead{{\Large \textbf{Edgar Tejada}} \linebreak \href{mailto:edgar_tejada0971@elcamino.edu}{edgar\underline{{ }{ }}tejada0971@elcamino.edu} $||$ \href{https://github.com/ejtejada}{https://github.com/ejtejada} $||$ \href{skype:ejtejada_1?call}{Skype:‭ ‬ejtejada‭\underline{{ }{ }}1} $||$ \href{tel:1-865-201-7787}{1$-$865$-$201$-$7787}}
 \rhead{}%[TODO] Put a QR code here
 \lfoot{} 
 \cfoot{} 
@@ -66,37 +67,36 @@
 \renewcommand{\headrulewidth}{0pt} 
 \renewcommand{\footrulewidth}{0pt} 
 %To make sure we actually have header 0.5in away from top edge
-%12pt is one-sixth of an inch. Subtract this from 0.5in to get headsep value
+%11pt is one-sixth of an inch. Subtract this from 0.5in to get headsep value
 \setlength\headsep{0.333in}
 
-%Fix Works Cited Heading
-%\defbibheading{bibliography}{%
-%	\section*{\centerline{\normalfont {\normalsize Works Cited}}}}%[FIXME] The title still has an oversized double space following it.
+
 
 
 %Begin document
 %
 \begin{document}
 \begin{flushleft}
-%%%%First page name, class, etc
+
+%%%%List useful and applicable skills:
 \underline{\textbf{Technical and Personal Skills}}
 \linebreak
-Languages:‭ 	‬C++,‭ ‬Java,‭ ‬Wolfram,‭ ‬MATLAB,‭ MIPS Assembly,‭ ‬Bash Shell Scripting,‭ ‬LabView,‭ ‬SQLite
-Digital Tools:‭	‬Linux,‭ ‬macOS,‭ ‬Vim,‭ ‬git,‭ ‬gcc,‭ ‬QtCreator,‭ ‬Visual Studios, Solidworks, KVM + QEMU virtualization
-Soft Skills:‭	‬Strong written and verbal communication,‭ ‬Group leadership, Project management
-Spoken Languages:‭	‬Fluent -‭ ‬English,‭ ‬Spanish‭ ‬Beginner - Mandarin Chinese 
+Languages{:} C++, ‬Java,‭ ‬Wolfram,‭ ‬MATLAB,‭ MIPS Assembly,‭ ‬Bash Shell Scripting, ‬LabView, ‬SQLite\newline
+Digital Tools{:}‭ ‬Linux, ‬macOS, ‬Vim, ‬git, ‬gcc, ‬QtCreator, ‬Visual Studios, Solidworks, KVM + QEMU virtualization\newline
+Spoken Languages{:} Fluent $-$ ‬English and‭ ‬Spanish, ‬Beginner $-$ Mandarin Chinese\newline
 
+%%%%Relevant personal projects:
+\underline{\textbf{Projects}}
+\linebreak
 
+%%%%Past work experiences within the last five years:
+\underline{\textbf{Experience}}
+\linebreak
 
-%%%%Changes paragraph indentation to 0.5in
-\setlength{\parindent}{0.5in}
-%%%%Begin body of paper here
+%%%%Post-Secondary Degrees Aqcuired:
+\underline{\textbf{Education}}
+\linebreak
 
-%\newpage
-%\medskip %Median skip?
-%\nocite{*} %This should go before we print the bibliography
-%\printbibliography%This only works with biber as the biblatex backend. :/
-%\end{workscited}
 \end{flushleft}
 \end{document}
 \} %Wait, who the hell does this align to?
