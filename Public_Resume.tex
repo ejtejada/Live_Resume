@@ -1,5 +1,5 @@
 %% Author: Edgar Tejada
-%% This is my public resume in Latex format.
+%% This is my public resume in Late format.
 
 \documentclass [11pt]{article}
 \title{Public Resume}
@@ -8,9 +8,10 @@
 \usepackage[backend=biber, bibencoding=utf8, style=mla, citestyle=mla]{biblatex}
 \usepackage[english]{babel} %English only, no greek or math.
 %\usepackage[greek,english]{babel} %Needed for greek letters
-\usepackage[pdfborder={0 0 0.5 [3 3]}, pdftitle={Edgar Tejada's Public Resume}]{hyperref} %Needed for website
+\usepackage[pdfborder={0 0 0.5 [3 3]}, pdftitle={Edgar Tejada's Public Resume}]{hyperref} %Needed for websites and citations
 \hypersetup{
 	colorlinks=true,
+	urlcolor=blue
 }
 \usepackage{csquotes}
 %\renewcommand{\mktextquote}[6]{#1#2#4#6#3#5} %Will this fix quotes having period on the outside?
@@ -28,8 +29,7 @@
 	}
 }
 %Make an exception for minus sign as a unicode character
-%\DeclareUnicodeCharacter{2212}{-}
-%\DeclareUnicodeCharacter{:}{colon}
+\DeclareUnicodeCharacter{2212}{-}
 %
 %Margin - 0.5 on edges, 0.75 at top
 %
@@ -82,28 +82,51 @@
 %%%%List useful and applicable skills:
 \underline{\textbf{Technical and Personal Skills}}
 \linebreak
-Languages:\begin{minipage}{0.87\linewidth}\begin{flushright}Python, C$+$$+$, ‬Java,‭ ‬Wolfram,‭ ‬MATLAB,‭ MIPS Assembly,‭ ‬Bash Shell Scripting, ‬LabView, ‬SQLite, \LaTeX \end{flushright}\end{minipage}\newline
-Toolset:‭\begin{minipage}{0.9\linewidth}\begin{center}Linux, ‬macOS, ‬Vim, ‬git, ‬gcc, ‬QtCreator, ‬Visual Studios, Solidworks, Fritzing, KVM and QEMU virtualization\end{center}\end{minipage}\newline
-Spoken Languages: Fluent $-$ ‬English and ‬Spanish\begin{minipage}{0.55\linewidth}\begin{flushright}Beginner $-$ Mandarin Chinese\end{flushright}\end{minipage}\newline
+Languages{:}\begin{minipage}{0.87\linewidth}\begin{flushright}Python, C++, ‬Java,‭ ‬Wolfram,‭ ‬MATLAB,‭ MIPS Assembly,‭ ‬Bash Shell Scripting, ‬LabView, ‬SQLite, \LaTeX\end{flushright}\end{minipage}\newline
+Toolset{:}‭\begin{minipage}{0.9\linewidth}\begin{center}Linux, ‬macOS, ‬Vim, ‬git, ‬gcc, ‬QtCreator, ‬Visual Studios, Solidworks, Fritzing, KVM and QEMU virtualization\end{center}\end{minipage}\newline
+Spoken Languages{:} Fluent $-$ ‬English and ‬Spanish\begin{minipage}{0.57\linewidth}\begin{flushright}Beginner $-$ Mandarin Chinese\end{flushright}\end{minipage}\newline
 
 %%%%Relevant personal projects:
 \underline{\textbf{Projects}}
 \linebreak
 \textbf{Bay Area Rapid Transit Geolocation System}\begin{minipage}{0.61 \linewidth}\begin{flushright}\href{https://github.com/ejtejada/Geotaggers}{https://github.com/ejtejada/Geotaggers}\end{flushright}\end{minipage}
 
-‭\begin{minipage}{1.0 \linewidth}\begin{flushright}$\diamond$ Prototyped an RFID tracking system for BART workers in tunnels without GPS signal as a Capstone project. \end{flushright}\end{minipage}
+‭\quad\quad$\diamond$ Prototyped an RFID tracking system for BART workers in tunnels without GPS signal as a Capstone project.
 
 \textbf{Society of Automotive Engineers Test Bench}\begin{minipage}{0.61 \linewidth}\begin{flushright}\href{https://github.com/brevsae/sae-testbench}{https://github.com/brevsae/sae-testbench}\end{flushright}\end{minipage}
 
-\begin{minipage}{1.0 \linewidth}\begin{flushright}$\diamond$ Ensured adherence to safety guidelines for battery temperature and high inertial emergency shutdown switches.\end{flushright}\end{minipage}
+‭\quad\quad$\diamond$ Ensured adherence to safety guidelines for battery temperature and high inertial emergency shutdown switches.
 
 \textbf{MacREU 2017 Image Processing}\begin{minipage}{0.71 \linewidth}\begin{flushright}\href{https://github.com/ejtejada/MacREU2017ImageProcessing}{https://github.com/ejtejada/MacREU2017ImageProcessing}\end{flushright}\end{minipage}
 
-\begin{minipage}{1.0 \linewidth}\begin{flushright}$\diamond$ ‭Built Wolfram library for predicting position for analysis of triangular objects in florescent, moving baths. \end{flushright}\end{minipage}
+‭\quad\quad$\diamond$ ‭Built Wolfram library for predicting position for analysis of triangular objects in florescent, moving baths.
+
 %%%%Past work experiences within the last six years:
 \underline{\textbf{Experience}}
 \linebreak
+\textbf{Undergraduate Intern, Crypto Market Researcher}\begin{minipage}{0.55 \linewidth}\begin{flushright}June 2019 to August 2019\end{flushright}\end{minipage}
+\emph{Loopring}, Shanghai, PRC
 
+‭\quad\quad$\diamond$ ‭Wrote and reported on the code bases and directions of competing Decentralized cryptocurrency exchanges.
+
+‭\quad\quad$\diamond$ Presented on legislation, such as on Libra US senate hearings and FAFT’s 2019 travel rules on cryptocurrency.
+
+‭\quad\quad$\diamond$ Debugged and documented TRON to ERC-20/Ethereum exchanging smart contracts in the Solidity language.
+
+\linebreak
+\textbf{Undergraduate Intern, Material Science Department}\begin{minipage}{0.535 \linewidth}\begin{flushright}June 2017 to August 2017\end{flushright}\end{minipage}
+\emph{Materials Connection REU}, University of California Riverside, Riverside, CA
+
+‭\quad\quad$\diamond$ ‭Implemented object tracking the movement of transition metal nanolayers, lowering measurement time.
+
+‭\quad\quad$\diamond$ Developed portable photoluminescent analysis packages to track reactions with adjustable, high-res cameras.
+
+‭\quad\quad$\diamond$ Improved reusablity and documented the lab’s Wolfram/Labview codebase and automated offsite backups.
+
+\linebreak
+\textbf{Supplemental Instruction Coach, Mathematics Department}\begin{minipage}{0.475 \linewidth}\begin{flushright}August 2015 to May 2016\end{flushright}\end{minipage}
+
+\linebreak
 %%%%Post-Secondary Degrees Acquired:
 \underline{\textbf{Education}}
 \linebreak
@@ -113,4 +136,4 @@ Spoken Languages: Fluent $-$ ‬English and ‬Spanish\begin{minipage}{0.55\line
 \linebreak
 \end{flushleft}
 \end{document}
-\} %Wait, who the hell does this align to?
+
