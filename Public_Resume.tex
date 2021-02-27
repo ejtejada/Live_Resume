@@ -1,5 +1,5 @@
 %% Author: Edgar Tejada
-%% This is my public resume in Late format.
+%% This is my public resume in Latex format.
 
 \documentclass [11pt]{article}
 \title{Public Resume}
@@ -48,10 +48,10 @@
 \graphicspath{ {./images/} }
 \usepackage{float}
 %
-%Rotating tables (e.g. sideways when too long)
+%Rotating tables and modular tables (e.g. sideways when too long)
 %
 \usepackage{rotating}
-
+\usepackage{tabularx}
 
 %
 %Fancy-header package to modify header/page numbering (insert last name)
@@ -91,13 +91,39 @@
 \begin{flushleft}
 
 %%%%List useful and applicable skills:
-\underline{\textbf{Technical and Personal Skills}}
-\linebreak
-Languages{:}\begin{minipage}{0.87\linewidth}\begin{flushright}Python, C++, ‬Java,‭ ‬Wolfram,‭ ‬MATLAB,‭ MIPS Assembly,‭ ‬Bash Shell Scripting, ‬LabView, ‬SQLite, \LaTeX\end{flushright}\end{minipage}\newline
-Toolset{:}‭\begin{minipage}{0.9\linewidth}\begin{center}Linux, ‬macOS, ‬Vim, ‬git, ‬gcc, ‬QtCreator, ‬Visual Studios, Solidworks, Fritzing, KVM and QEMU virtualization\end{center}\end{minipage}\newline
-Spoken Languages{:} Fluent $-$ ‬English and ‬Spanish\begin{minipage}{0.57\linewidth}\begin{flushright}Beginner $-$ Mandarin Chinese\end{flushright}\end{minipage}\newline
 
+\raggedright \underline{\textbf{Technical and Personal Skills}}
+\linebreak
+{
+\centering
+\begin{tabularx}{0.8\textwidth} { 
+  | >{\centering\arraybackslash}X | 
+  | >{\centering\arraybackslash}X | 
+  | >{\centering\arraybackslash}X | 
+  | >{\centering\arraybackslash}X |}
+
+	\hline
+	\textbf{10+ Years} & \textbf{5+ Years} & \textbf{2+ Years} & \textbf{Beginner}\\ [0.5ex]
+	\hline
+	Linux & C++ & SQLite & MIPS Assembly\\ [0.5ex]
+	\hline
+	macOS & Java & LabVIEW & Solidworks\\ [0.5ex]
+	\hline
+	MATLAB & git & Python & Visual Studios\\ [0.5ex]
+	\hline
+	POSIX Scripting & gcc & KVM virtualization & Windows\\ [0.5ex]
+	\hline
+	Spanish Language & Vim & \LaTeX & Mandarin Chinese\\ [0.5ex]
+	\hline
+\end{tabularx}
+
+}
+\raggedright
+%Languages{:}\begin{minipage}{0.87\linewidth}\begin{flushright}Python, C++, Java,‭ Wolfram,‭ MATLAB,‭ MIPS Assembly,‭ ‬Bash Shell Scripting, LabVIEW, SQLite, \LaTeX\end{flushright}\end{minipage}\newline
+%Toolset{:}‭\begin{minipage}{0.9\linewidth}\begin{center}Linux, macOS, ‬Vim, git, gcc, QtCreator, ‬Visual Studios, Solidworks, Fritzing, KVM and QEMU virtualization\end{center}\end{minipage}\newline
+%Spoken Languages{:} Fluent $-$ English and Spanish\begin{minipage}{0.57\linewidth}\begin{flushright}Beginner $-$ Mandarin Chinese\end{flushright}\end{minipage}\newline
 %%%%Relevant personal projects:
+
 \underline{\textbf{Projects}}
 \linebreak
 \textbf{Bay Area Rapid Transit Geolocation System}\begin{minipage}{0.61 \linewidth}\begin{flushright}\href{https://github.com/ejtejada/Geotaggers}{https://github.com/ejtejada/Geotaggers}\end{flushright}\end{minipage}
@@ -132,7 +158,7 @@ Spoken Languages{:} Fluent $-$ ‬English and ‬Spanish\begin{minipage}{0.57\li
 
 ‭‭\quad\quad\quad$\diamond$ Developed portable photoluminescent analysis packages to track reactions with adjustable, high-res cameras.
 
-‭‭\quad\quad\quad$\diamond$ Improved reusablity and documented the lab’s Wolfram/Labview codebase and automated offsite backups.
+‭‭\quad\quad\quad$\diamond$ Improved reusablity and documented the lab’s Wolfram/LabVIEW codebase and automated offsite backups.
 
 \linebreak
 \textbf{Supplemental Instruction Coach, Mathematics Department}\begin{minipage}{0.475 \linewidth}\begin{flushright}August 2015 to May 2016\end{flushright}\end{minipage}
@@ -140,7 +166,7 @@ Spoken Languages{:} Fluent $-$ ‬English and ‬Spanish\begin{minipage}{0.57\li
 
 ‭‭\quad\quad\quad$\diamond$ ‭Lead study sessions for students in College Algebra and Statistics that reinforced learning outcomes.
 
-‭‭\quad\quad\quad$\diamond$ Designed robust practice exams based on the professors’ notes and hosted timed mock exam sessions.
+‭‭\quad\quad\quad$\diamond$ Designed robust practice exams based on the professor's notes and hosted timed mock exam sessions.
 
 ‭‭\quad\quad\quad$\diamond$ Created teaching materials and group exercises that fostered Socratic learning and critical testing strategies.
 
